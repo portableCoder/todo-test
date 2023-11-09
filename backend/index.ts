@@ -18,7 +18,7 @@ async function connectToMongoDB() {
     try {
         // Connect to the server
         await client.connect();
-
+        console.log("MONGODB CONNECTED")
 
     } finally {
 
@@ -27,7 +27,7 @@ async function connectToMongoDB() {
 
 connectToMongoDB().catch((e) => {
     console.error("FAILED TO CONNECT", e)
-}).then(() => console.log("MONGODB CONNECTED"))
+})
 
 
 const app = express();
