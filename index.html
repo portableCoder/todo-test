@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body class="w-screen px-16 py-8 overflow-x-hidden bg-white text-black">
+    <div class="text-3xl font-bold my-4">
+      Todo App
+      </div>
+
+    <div class="flex w-full  items-center justify-center gap-x-4">
+        <textarea class="w-full p-2 border-zinc-950 focus:outline-none focus:border-indigo-500 border-2 rounded-lg" placeholder="todo" id="todo-input">
+        </textarea>
+        <button id="add-todo" class="btn">
+            ADD TODO
+        </button>
+      
+    </div>
+    <div id="app" class="flex flex-col gap-y-8 my-8"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

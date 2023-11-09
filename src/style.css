@@ -1,0 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.btn {
+  @apply text-white whitespace-nowrap p-2 flex items-center justify-center font-bold text-xl rounded-lg bg-indigo-600 hover:bg-indigo-500;
+}
